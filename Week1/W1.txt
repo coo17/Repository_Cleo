@@ -1,0 +1,40 @@
+Repository_Cleo
+-week1
+
+Q1:Try the statements below in REPL. Please answer that there are correct or not and
+explain the reasons.
+a. val id = 9527
+b. var number : Int = 5.6
+c. var title = "Hello Kotlin!"
+d. val content : String = null
+e. val number : Double? = 556.6
+f. var list: List<String>? = listOf(null, null)
+g. var list: List<String?>? = listOf("Wayne", "Chen")
+h. list.size
+i. list?.size
+
+A1:
+
+a. Correct.
+b. Incorrect, the floating-point literal does not conform to the expected type Int.
+c. Correct.
+d. Incorrect, null can not be a value of a non-null type String. Content is type of String, it can not be null.
+e. Correct.
+f. Incorrect, because the content is type of string, it can not be null.
+g. Correct.
+h. Incorrect, 因為g有可能是null，所以h要加問號檢查一下。
+i. Correct.
+
+Q2:Read the code below, choose the correct answer and explain the reason.
+
+A2:C."Your grace." will be pinted out. The length of Hello and welcome to AppWorks School :)" in the range of 1 to 39 so that the code will print "Your grace."
+
+
+Q3:Read the code below, choose the correct answer and explain the reason.
+
+Q3.D."val array = Array(6) { 1000.0.pow(it) }" will be printed out.
+   因為Array的size是6，在for迴圈裡面會跑0-5的index，所以依序跑出1000的index次方。
+
+
+
+
