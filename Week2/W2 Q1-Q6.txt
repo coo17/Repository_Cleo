@@ -1,0 +1,51 @@
+1.
+繼承父類的類別，可以延續父類別的屬性與方法，不需要額外建立。
+可以用覆寫父類別的方式表示的不同的值。
+
+2.
+
+分割字串，用來取得字串中想要的資訊。
+fun main() {
+    val word = "BlackiTeaime"
+    val delim = "i"
+ 
+    val list = word.split(delim)
+ 
+    println(list)   
+}
+
+-> [Black,Tea,me]
+
+
+3. 以下會用map來舉例在android中鍵值對的使用:
+
+fun main() {
+    
+    val mana: MutableMap<String, Int> = mutableMapOf(Pair("Kyle", 100), Pair("Terry", 50), Pair("Lea", 5))
+    
+    for(key in mana.keys){  
+        println("key = $key, value = ${mana.get(key)}")
+    }
+
+}
+
+->
+key = Kyle, value = 100
+key = Terry, value = 50
+key = Lea, value = 5
+
+4.
+ArrayList要找到裡面的元素物件，可以透過索引(index)直接找到；
+LinkedList需要從頭或尾開始一個一個找。
+
+
+5.
+
+Byte、Short、Int、Long、Float、Double、Char與Boolean是基本型別(value type)。
+
+
+
+6.
+
+Int所能儲存的最大值為2,147,483,647，若希望儲存比這個值更大資料，則可以用Long進行資料儲存。
+

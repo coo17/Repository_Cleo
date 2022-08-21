@@ -34,4 +34,12 @@
     <string name="congratulations">Congratulations!</string>
     <string name="share">Share</string>
     <string name="sharing_not_available">Sharing Not Available</string>
+    <string name="profile">Profile</string>
+    <string name="textName">Name</string>
+    <string name="textNickName">Nick Name</string>
+    <string name="contentName">Cleo Chang</string>
+    <string name="contentNickName">Cleo</string>
+    <string name="textAboutMe">About Me</string>
+    <string name="contentAboutMe">Hi! I am Cleo. \nBeing a beginner as android developer is a big challenge to me!\n</string>
+    <string name="profileButton">PROFILE</string>
 </resources>
