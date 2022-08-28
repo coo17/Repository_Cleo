@@ -46,14 +46,33 @@ class SleepQualityViewModel(
         _navigateToSleepTracker.value = null
     }
 
+
+
+    private val _onSetSleepInformation= MutableLiveData<Boolean>()
+    val onSetSleepInformation: LiveData<Boolean>
+        get()=_onSetSleepInformation
+
+
     fun onSetSleepQuality(quality: Int) {
         uiScope.launch {
             withContext(Dispatchers.IO) {
                 val tonight = database.get(sleepNightKey) ?: return@withContext
                 tonight.sleepQuality = quality
                 database.update(tonight)
+                _onSetSleepInformation.postValue(true)
             }
-            _navigateToSleepTracker.value = true
+        }
+    }
+
+    fun onSetSleepInformation(sleep: String) {
+        uiScope.launch {
+            withContext(Dispatchers.IO) {
+                val tonight = database.get(sleepNightKey) ?: return@withContext
+                tonight.sleepInformation = sleep
+                database.update(tonight)
+                _onSetSleepInformation.postValue(false)
+                _navigateToSleepTracker.postValue(true)
+            }
         }
     }
 

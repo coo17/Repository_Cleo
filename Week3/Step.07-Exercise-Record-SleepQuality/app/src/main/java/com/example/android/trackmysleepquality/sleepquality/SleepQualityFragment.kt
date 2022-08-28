@@ -71,6 +71,12 @@ class SleepQualityFragment : Fragment() {
             }
         })
 
+        sleepQualityViewModel.onSetSleepInformation.observe(viewLifecycleOwner,  Observer {
+            if (it == true) {
+                val information = binding.sleepInformation.text.toString()
+                sleepQualityViewModel.onSetSleepInformation(information)
+            }
+        })
 
         //TODO (06) Using the SleepTrackerFragment code as a reference, get the passed in arguments,
         //and get the SleepQualityViewModel and add it to data binding.

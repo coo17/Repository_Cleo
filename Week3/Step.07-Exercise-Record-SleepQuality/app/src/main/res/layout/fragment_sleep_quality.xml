@@ -126,5 +126,19 @@
             app:srcCompat="@drawable/ic_sleep_5"
             android:onClick="@{() -> sleepQualityViewModel.onSetSleepQuality(5)}"/>
 
+        <EditText
+            android:id="@+id/sleep_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Write down your dream"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.572"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quality_four_image"
+            app:layout_constraintVertical_bias="0.712"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

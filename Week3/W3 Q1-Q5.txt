@@ -1,0 +1,61 @@
+1. What is Encapsulation? Try to list out the benefits of Encapsulation.
+
+Encapsulation is a way to hide internal data from the other class which can access it. We can declare the variables of a class by using private to do data hiding.
+
+The benefits of Encapsulation as below:
+1.It's a shield of hiding information to keep secured.
+2.Prevent the other user to change hided dataa automatically.
+
+
+2. Try to explain what enum is and why we use them.
+
+Enumeration is a named list of constants and enum constants are objects of enum class type.
+
+Here are the reason why we use enum:
+1.Improve readability
+2.The constant value can be changed at anytime
+
+
+3. How to use enum in Kotlin? Attach a sample code that uses enum in Kotlin.
+
+We can initialize data class in Kotlin, a sample code can be refered as below:
+
+enum class Color{
+RED,
+WHITE,
+BLACK,
+GREEN
+}
+
+fun main(args: Array<String>) {
+println("Amiya = "  + Color.RED.ordinal)
+println("Closure = " + Color.WHITE.ordinal)
+println("Blaze = " + Color.BLACK.ordinal)
+println("Rosmontis = "  + Color.GREEN.ordinal)
+}
+->
+Amiya = 0
+Closure = 1
+Blaze = 2
+Rosmontis = 3
+
+
+4. What are the differences between LinearLayout and RelativeLayout? Try to explain in
+detail.
+
+*Linear layout can use vertically or horizontally to represent layout by aligning in a single direction.
+
+
+*Relative Layout
+RelativeLayout is a view group that displays child views in relative positions.
+We use relative position to control component position and default child view as true or false.
+
+
+
+
+5. Try to explain the benefits of ConstraintLayout. Why should you use it?
+
+*Constraint layout is more convenient to arrange layout by dragging, dropping component and it's easier to handle complex design.
+
+If we use linear layout, some data setting are fixed that we need to fix one by one, it's more complex.
+If we use relative layout, we need to be careful of the realtionship of each component. Once we affect one component, it's possilbe of affecting the other component,
