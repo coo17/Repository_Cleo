@@ -1,0 +1,93 @@
+1. What is Polymorphism? Try to explain in Mandarin.
+
+多型是指不同物件可以提供一個共同的介面或方法，並延伸成多種實作。
+
+
+2. Here are the 7 important lifecycle methods of an Activity:
+
+i. onCreate()
+ii. onStart()
+iii. onResume()
+iv. onPause()
+v. onStop()
+vi. onDestroy()
+
+Try to explain when they are called during the lifecycle of Activity.
+
+當在activity生命週期做轉換，系統會使用此6種運行方式做調用。
+可以把它們分為entire lifetime、visible lifetime、foreground lifetime來看。
+
+i. onCreate()當創一個activity的時候會運用到onCreate()。
+ii. onStart()當使activity變得可見的時候，就會運用onStart()。
+iii. onResume()當activity準備與其他activity做調用，把保存的資料拿回來。
+iv. onPause()當acitivity進入一個暫停的狀態，會暫時保存資料。
+v. onStop()當activity暫停後跳出螢幕視窗，會調用onStop()。
+vi. onDestroy()當要結束activity時，系統會調用onDestroy()來做釋放資料的動作。
+
+還有一個是onRestart()->當一個activity重新啟用，會調用onRestar並馬上呼叫onStart()。
+上述六種方法也可以分為以下三類:
+
+-Entire lifetime，發生在onCreate、onDestroy之間。
+
+-Visible lifetime，是指activity是否能在螢幕上顯示，會使用onStart()和onStop()。
+
+-Foreground lifetime，是指activity在前台是否能進行使用，會使用onResume和onPause()。
+
+以下舉例，
+(1)使用者啟動網拍
+onCreate(網拍)-> onStart(網拍) -> onResume(網拍)
+
+(2)跳出去看Instagram
+onPause(網拍)-> onCreate(IG) -> onStart(IG) -> onResume(IG) -> onStop(網拍)
+
+(3)回到原網拍、並結束Instagram使用
+onPause(IG) -> onRestart(網拍) -> onStart(網拍) -> onResume(網拍) -> onStop(網拍)-> onDestroy(IG)
+
+(4)結束網拍
+onPause(網拍) -> onStop(網拍) -> onDestroy(網拍)
+
+3. What is the Android Jetpack?
+
+Android Jetpack是包含一系列完整的程式庫，可以提供開發人員減少重複的樣板代碼並加速開發。
+可以在build.gradle文件中新增jetpack組件(使用google Maven)支援。
+
+Jetpack涵蓋四大方面:foundation, architecture, behavior, UI
+四大方面目前涵蓋等以下組件:
+Foundation-AppCompat, Android KTX, Multidex, Test
+Architecture-Data Binding, Lifecycles, LiveData, Navigation, Paging, Room, ViewModel, WorkManager
+Behavior- Download Manager, Media&Playback, Permissions, Notification, Sharing, Slices
+UI-Animation&Transitions, Auto, TV&Wear, Emoji, Fragment, Layout, Palette
+
+4. What is Coroutines? Why do we use it? Try to explain in Mandarin
+
+協程是幫助程式運行，並解決異步的問題，以及避免影響主線程，使用協程有助於管理長時間運行的任務。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
