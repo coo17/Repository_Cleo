@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "302754470427",
+    "project_id": "test-c74eb",
+    "storage_bucket": "test-c74eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302754470427:android:d5b9c5a12765d5d4d536be",
+        "android_client_info": {
+          "package_name": "com.cleo.group3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302754470427-babd04608usb7uc78h9juo0m48i63ois.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnhnTz6Ak3TCliC_Kl-fGxBdJSyuwvS1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302754470427-babd04608usb7uc78h9juo0m48i63ois.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "302754470427-8b2ds6cnpoehsdc0mp4dh4v15dp7pt90.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Chun.FirebaseTest"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
